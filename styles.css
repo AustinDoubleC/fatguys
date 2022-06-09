@@ -1,0 +1,214 @@
+body{
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #eeeeee;
+}
+
+header{
+    display:flex;
+    background-color: #f13123;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    opacity: 0.9;
+}
+
+.navBar{
+    display: flex;
+    list-style: none;
+}
+
+.navBar li{
+    margin-right: 25px;
+    font-size: 24px;
+}
+
+#logo{
+    margin:10px 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.empty{
+    height: 100px;
+}
+a:hover,
+a:active{
+    color: #555555;
+    background-color: #f89089;
+
+}
+a:active{
+    color:#f13123;
+}
+
+.hero-container{
+    width:90%;
+    height:500px;
+    background-image: url(images/burger-hero.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    position: relative;
+}
+
+.slogan-container{
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slogan-container h1{
+    font-size: 36px;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 10px #222222;
+}
+.slogan-container h2{
+    font-size: 24px;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 10px #222222;
+}
+span{
+    font-size: 50px;
+}
+
+.mission{
+    width:85%;
+    margin:0 auto;
+    color: #222222;
+}
+.mission h2,
+.food h2,
+.people h2
+{
+    font-size: 36px;
+    margin-top: 100px;
+}
+.mission h3{
+    font-size: 24px;
+}
+
+.mission p{
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.food{
+    width:85%;
+    margin:0 auto;
+    color: #222222;
+}
+
+.people{
+    width:85%;
+    margin:0 auto;
+    color: #222222;
+}
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food-container{
+    width: 400px;
+    height: 400px;
+    background-color: #851c14;
+    color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.food-container img{
+    height: 350px;
+    margin-top: 5px;
+}
+.food-container h3{
+    margin-top:10px;
+}
+
+footer{
+    background-color: #851c14;
+    color: #222222;
+}
+.location-container{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eeeeee;
+    margin-bottom: 0px;
+    justify-content: space-around;
+}
+.location-container p,
+.location-container h2{
+    margin: 0px;
+}
+.people-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.people-container{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding:10px;
+    color: #222222;
+}
+
+.people-container h3,
+.people-container p{
+    margin: 5px;
+}
+
+.people-container img{
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #555555;
+}
+
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        margin-bottom: 0px;
+    }
+    .navBar{
+        margin-top: 5px;
+    }
+
+    .slogan-container h1{
+
+        font-size: 24px;
+    }
+    .slogan-container h2{
+        font-size:20px;
+    }
+    span{
+        font-size: 36px;
+    }
+    .hero-container{
+        height: 250px;
+    }
+}
